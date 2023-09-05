@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <style>
+        body
+        {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #da1567; 
+        }
+        .container {
+            text-align: center;
+            background-color: #68093d; 
+            padding: 20px; 
+            color: white; 
+        }
+        table,tr,td
+        {
+            border-collapse: collapse;
+            padding: 3px;
+            margin: 0 auto;
+        }
+        .name
+        {
+            padding-right: 40px;
+            text-align: left; 
+        }
+        .C1
+        {
+            width: 300px;
+        }
+        .radio
+        {
+            display: inline-block;
+            text-align: left; 
+        }
+        .declare
+        {
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .register
+        {
+            text-align: center;
+        }
+        .Regform
+        {
+            text-align: center;
+            color: blue;
+        }
+        /* Enlarge the button */
+        .register button {
+            padding: 10px 150px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <table>
+        <tr>
+            <td class="name"><b>Name:</b></td>
+            <td><input class="C1" type="text" placeholder="your name"></td>
+        </tr>
+        <tr>
+            <td class="name"><b>Email:</b></td>
+            <td><input class="C1" type="text" placeholder="your email"></td>
+        </tr>
+        <tr>
+            <td class="name"><b>Phone Number:</b></td>
+            <td><input class="C1" type="text"></td></td>
+        </tr>
+        <tr>
+            <td class="name"><b>Password:</b></td>
+            <td><input class="C1" type="text"></td>
+        </tr>
+        <tr>
+            <td class="name"><b>Gender:</b></td>
+            <td>
+                <input class="radio" type="radio" name="gender">
+                <label for="gender">Male</label>
+                <input class="radio" type="radio" name="gender">
+                <label for="gender">Female</label>
+                <input class="radio" type="radio" name="gender">
+                <label for="gender">Other</label>            
+            </td>
+        </tr>
+        <tr>
+            <td class="name"><b>Language:</b></td>
+            <td>
+                <select name="Language"  id="Language" style="width: 60%;">
+                    <option value="">Select Language</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Tamil">Tamil</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="name"><b>Zip Code:</b> </td>
+            <td><input class="C1"  type="number"></td>
+        </tr>
+        <tr>
+            <td class="name">
+               <label for="about"><b>About:</b> </label> 
+            </td>
+            <td>
+                <textarea name="about" class="C1" type="text" cols="10" rows="5" placeholder="Write about yourself"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="register">
+        <button>Register</button>
+    </div>
+  </div>
+</body>
+</html>

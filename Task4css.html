@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 15px 45px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            border-right: 3px solid white; 
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+
+        .sidenav a:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidenav a:first-child {
+            border-top: 3px solid white;
+        }
+
+        .sidenav a:hover {
+            background-color: #444;
+            transform: scale(1.1); 
+        }
+
+        .main {
+            margin-left: 150px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a style="background-color: green;" href="#"></a>
+    <a style="background-color: blue;" href="#"></a>
+    <a style="background-color: red;" href="#"></a>
+    <a style="background-color: black;" href="#"></a>
+</div>
+
+<div class="main">
+    <h1>Hoverable Sidenav Buttons</h1>
+    <p>Here over the buttons in the left side navigation to open them.</p>
+</div>
+
+</body>
+</html>

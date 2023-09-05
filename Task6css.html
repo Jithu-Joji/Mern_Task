@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; 
+            margin: 0 auto; 
+            display: block; 
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 172%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            background-color: #f2f2f2;
+        }
+
+        .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 180px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-cancel {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .chkbox {
+            display: flex;
+            align-items: left;
+        }
+
+        .forgot-password {
+            text-align: right;
+            white-space: nowrap; 
+        }
+
+        .forgot-password a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="woman-attorney-avatar.png" alt="Woman attorney avatar" class="avatar">
+    <br><br><br><br>
+    <form action="/login" method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+            </tr>
+            <tr>    
+                <td><input type="text" name="username" id="username" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+            </tr>
+            <tr>    
+                <td><input type="password" name="password" id="password" class="form-control"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Login" class="btn btn-primary"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="display:flex;">
+                        <input type="checkbox" id="remember-me" name="remember-me" class="chkbox">
+                        <label for="remember-me">Remember Me</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn-cancel">Cancel</button>
+                </td>
+                <td>
+                    <div class="forgot-password">
+                        <a href="#">Forgot <span style="text-decoration: underline;">Password?</span></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
